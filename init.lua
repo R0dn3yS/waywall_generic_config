@@ -15,7 +15,7 @@ local thin_overlay_path = waywall_config_path .. "resources/overlay_thin.png"
 local wide_overlay_path = waywall_config_path .. "resources/overlay_wide.png"
 
 local pacem_path = waywall_config_path .. "resources/paceman-tracker-0.7.2.jar"
-local nb_path = waywall_config_path .. "resources/Ninjabrain-Bot-1.5.1.jar"
+local nb_path = waywall_config_path .. "resources/Ninjabrain-Bot-1.5.2.jar"
 local overlay_path = waywall_config_path .. "resources/measuring_overlay.png"
 local stretched_overlay_path = waywall_config_path .. "resources/stretched_overlay.png"
 
@@ -88,8 +88,8 @@ local pie_colors = {
     { input = "#E446C4", output = cfg.pie_chart_3 }
 }
 local percentage_colors = {
-    { input = "#E96D4D", output = cfg.text_col },
-    { input = "#45CB65", output = cfg.text_col }
+    { input = "#E96D4D", output = cfg.percentages_match_text and cfg.text_col or cfg.pie_chart_1 },
+    { input = "#45CB65", output = cfg.percentages_match_text and cfg.text_col or cfg.pie_chart_2 },
 }
 
 -- thin mirrors
