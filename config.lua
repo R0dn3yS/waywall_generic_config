@@ -3,10 +3,10 @@ return {
     debug_text = true,
 
     -- ==== LOOKS ====
-    resolution = { 1920, 1080 },
+    resolution = { 2560, 1440 },
 
     bg_col = "#000000",
-    toggle_bg_picture = false,
+    toggle_bg_picture = true,
     text_col = "#FFFFFF",
     pie_chart_1 = "#EC6E4E",
     pie_chart_2 = "#46CE66",
@@ -21,31 +21,27 @@ return {
 
 
     -- ==== ALTERNATIVE RESOLUTIONS ====
-    thin_res = { 340, 1080 },
-    wide_res = { 1920, 300 },
+    thin_res = { 400, 1440 },
+    wide_res = { 2560, 400 },
     tall_res = { 384, 16384 },
 
 
     -- ==== MIRRORS ====
-    e_count = { enabled = true, x = 1340, y = 300, size = 5, colorkey = false },
+    e_count = { enabled = true, x = 1500, y = 400, size = 5, colorkey = false },
+    thin_pie = { enabled = true, x = 1490, y = 645, size = 4, colorkey = false }, -- Turning off colorkeying also maintains the original pie chart's dimensions and shows the percentages
+    thin_percent = { enabled = false, x = 1568, y = 1050, size = 6 },
+    tall_pie = { enabled = true, x = 1490, y = 645, size = 4, colorkey = false }, -- Leave same as thin for seamlessness
+    tall_percent = { enabled = false, x = 1568, y = 1050, size = 6 },             -- Leave same as thin for seamlessness
 
-    thin_pie = { enabled = true, x = 1200, y = 400, size = 4, colorkey = false }, -- Turning off colorkeying also maintains the original pie chart's dimensions and shows the percentages
-    tall_pie = { enabled = true, x = 1200, y = 400, size = 4, colorkey = false }, -- Leave same as thin for seamlessness
-
-    thin_percent = { enabled = false, x = 1300, y = 850, size = 6 },
-    tall_percent = { enabled = false, x = 1300, y = 850, size = 6 }, -- Leave same as thin for seamlessness
-    percentages_match_text = false,                                  -- Enabling this makes the percentages match the text color rather than the pie colors
-
-
-    measuring_window = { enabled = true, x = 30, y = 340, size = 10 },
+    measuring_window = { enabled = true, x = 30, y = 340, size = 14 },
     stretched_measure = false,
 
 
     -- ==== KEYBINDS ====
     -- resolution changes
-    thin = { key = "*-Alt_L", f3_safe = false, ingame_only = true },
-    wide = { key = "*-B", f3_safe = true, ingame_only = true },
-    tall = { key = "*-F4", f3_safe = false, ingame_only = false },
+    thin = { key = "*-Alt_R", f3_safe = false, ingame_only = true },
+    wide = { key = "*-Caps_Lock", f3_safe = true, ingame_only = true },
+    tall = { key = "*-Alt_L", f3_safe = false, ingame_only = false },
 
     -- startup actions
     toggle_fullscreen_key = "Shift-O",
@@ -53,7 +49,7 @@ return {
 
     -- during game actions
     toggle_ninbot_key = "*-apostrophe",
-    toggle_remaps_key = "Insert",
+    toggle_remaps_key = "Page_Up",
 
 
     -- ==== KEYBOARD ====
@@ -69,7 +65,7 @@ return {
 
     -- ==== MISC ====
     res_1440 = false,
-    sens_change = { enabled = false, normal = 1.0, tall = 0.1 }, -- make sure raw input is off
-    enable_resize_animations = false,
+    sens_change = { enabled = true, normal = 1.87089645, tall = 0.12620956 }, -- make sure raw input is off
+    enable_resize_animations = true,
 
 }
