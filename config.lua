@@ -6,7 +6,7 @@ return {
     resolution = { 2560, 1440 },
 
     bg_col = "#000000",
-    toggle_bg_picture = false,
+    toggle_bg_picture = true,
     text_col = "#FFFFFF",
     pie_chart_1 = "#EC6E4E",
     pie_chart_2 = "#46CE66",
@@ -39,9 +39,9 @@ return {
 
     -- ==== KEYBINDS ====
     -- resolution changes
-    thin = { key = "*-Alt_L", f3_safe = false, ingame_only = true },
-    wide = { key = "*-B", f3_safe = true, ingame_only = true },
-    tall = { key = "*-F4", f3_safe = false, ingame_only = false },
+    thin = { key = "*-Alt_R", f3_safe = false, ingame_only = true },
+    wide = { key = "*-Caps_Lock", f3_safe = true, ingame_only = true },
+    tall = { key = "*-Alt_L", f3_safe = false, ingame_only = false },
 
     -- startup actions
     toggle_fullscreen_key = "Shift-O",
@@ -49,7 +49,7 @@ return {
 
     -- during game actions
     toggle_ninbot_key = "*-apostrophe",
-    toggle_remaps_key = "Insert",
+    toggle_remaps_key = "Page_Up",
 
 
     -- ==== KEYBOARD ====
@@ -65,7 +65,7 @@ return {
 
     -- ==== MISC ====
     res_1440 = false,
-    sens_change = { enabled = false, normal = 1.0, tall = 0.1 }, -- make sure raw input is off
-    enable_resize_animations = false,
+    sens_change = { enabled = true, normal = 1.87089645, tall = 0.12620956 }, -- make sure raw input is off
+    enable_resize_animations = true,
 
 }
